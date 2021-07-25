@@ -40,6 +40,6 @@ public class MyResourceTest {
     @Test
     public void fooTest() {
         String responseMsg = target.path("myresource").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+        assertEquals("Got it: A, b, see", responseMsg);
     }
 }

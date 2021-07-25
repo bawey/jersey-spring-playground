@@ -23,6 +23,7 @@ public class FakeApp {
         // create a resource config that scans for JAX-RS resources and providers
         // in com.example package
         final ResourceConfig rc = new ResourceConfig().packages("com.example");
+        rc.property("contextConfigLocation", "classpath:appCtx.xml");
 
         // create and start a new instance of grizzly http server
         // exposing the Jersey application at BASE_URI
