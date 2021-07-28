@@ -11,7 +11,7 @@ import javax.ws.rs.client.WebTarget;
 
 import static org.junit.Assert.assertEquals;
 
-public class MyResourceTest {
+public class TestWithFakeApp {
 
     private HttpServer server;
     private WebTarget target;
