@@ -5,7 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="myResource" class="com.example.MyResource"></bean>
     <bean name="repo" class="com.example.MyRepo"></bean>
+    <bean name="myResource" class="com.example.MyResource">
+        <constructor-arg name="repo" ref="repo"></constructor-arg>
+    </bean>
 
 </beans>
